@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
 
         val randomInt= Random().nextInt(6)+1
-       val drawableResourse= when(randomInt){
+       val drawableResourse= when(randomInt){// these line of code is used to select the image
             1->R.drawable.dice_1
             2->R.drawable.dice_2
             3->R.drawable.dice_3
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             5->R.drawable.dice_5
             else->R.drawable.dice_6
         }
-        diceImage.setImageResource(drawableResourse)
+        diceImage.setImageResource(drawableResourse)//this line of code is used to set the image
 
     }
 }
